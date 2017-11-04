@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+/* -------- Main ---------*/
+.main {
+  margin: 0;
+  padding: 0;
+  flex: 1 0 auto;
+  background: url(../img/skyscraper.png);
+  overflow: hidden;
+}
+.main .container {
+  margin-top: 20px;
+  width: 500px;
+  height: 600px;
+  background: #FFF;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+}
+.main .container{
+  background: #FFF;
+}
+.main .container .super
+{
+  width: 90%;
+  text-align: right;
+  display: inline-block;
+  margin-top: 10px;
+}
+.main .container input[type=text]{
+  width: 100%;
+  margin-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid #545454;
+  text-align: right;
+  font-size: 30px;
+}
+.main .container .btn-back{
+  display: inline-block;
+  padding: 10px;
+  margin: 5px 0;
+  color: #000;
+}
+.main .container .btn-back:hover{
+  color: #333333;
+}
+.main .container .btn-fun{
+  background: #7D7D7D;
+  text-align: center;
+  margin: 5px 0;
+  padding: 30px 40px;
+  color: #FFF;
+}
+.main .container .btn-fun:hover{
+  background: #A3A3A3;
+}
+.main .container .btn-fun:active{
+  background: #BFBFBF;
+}
+
+
+/* -------- Footer ---------*/
+footer .description .fa-facebook,
+footer .description .fa-github {
+  margin: 0 19%;
+  margin-top: 20px;
+  color: #000;
+  font-size: 30px;
+}
+footer .description .fa-facebook:hover {
+  color:  #3b5998;
+}
+footer .description .fa-github:hover {
+  color: #6e5494;
+}
+footer .description{
+  margin: 0;
+  padding: 10px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,.3);
+}
+footer .description .parrafo{
+  margin-top: 25px;
+}
+footer .copyright{
+  background: #F5F5F5;
+}
+footer .copyright .parrafo{
+  padding: 10px;
+  margin: 0;
+}
+/* -------- Media Queris---------*/
+@media screen and (max-width: 518px) {
+  .main .container {
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .main .container input[type=text]{
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 450px){
+  .main .container input[type=text]{
+    font-size: 25px;
+  }
+  .main .container .btn-fun{
+    margin: 5px 0;
+    padding: 15px 25px;
+  }
+  .main .container .btn-back{
+    padding: 5px;
+    margin: 5px 0;
+  }
+}
